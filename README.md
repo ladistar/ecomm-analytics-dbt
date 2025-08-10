@@ -3,7 +3,8 @@
 **▶ Live dbt docs:** https://ladistar.github.io/ecomm-analytics-dbt/
 
 ---
-This is a **portfolio-ready dbt project** you can push straight to GitHub. It runs locally and in **GitHub Actions** using DuckDB (no external warehouse needed).
+I built this as a hands-on, zero-credential demo of how I approach analytics engineering with dbt.  
+You can clone it, hit **Run workflow**, and watch the project build, test, and publish docs—no cloud warehouse required.
 
 ## What it builds
 - **Seeds → Staging → Intermediate → Marts**
@@ -60,7 +61,7 @@ analyses/            # example queries for reviewers
 macros/              # custom macros (light)
 ```
 
-## Business context (sample)
+## Business context
 
 You’re an ecommerce company selling consumer goods online. We track customers, products, orders, order items, payments, and basic web events. The marts expose core analytics like **revenue**, **AOV**, **units sold**, and **customer lifecycle** (first/last order, order count, LTV approximation).
 
