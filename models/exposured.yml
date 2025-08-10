@@ -1,0 +1,31 @@
+version: 2
+
+exposures:
+  - name: ecomm_kpi_dashboard
+    type: dashboard
+    maturity: medium
+    url: https://example.com/dashboards/ecomm-kpis    # put your Tableau/Looker link here
+    description: >
+      Company KPI dashboard tracking daily revenue, AOV, units sold, and customer growth.
+    owner:
+      name: Robert Ladimir
+      email: you@example.com
+    depends_on:
+      - ref('fct_orders')
+      - ref('dim_customers')
+      - ref('dim_products')
+      - ref('daily_revenue')
+      - ref('aov_by_day')
+
+  - name: weekly_revenue_report
+    type: analysis
+    maturity: low
+    url: https://example.com/reports/weekly-revenue
+    description: >
+      Weekly revenue email/report generated from marts.
+    owner:
+      name: Data Team
+      email: you@example.com
+    depends_on:
+      - ref('daily_revenue')
+      - ref('fct_orders')
