@@ -1,0 +1,11 @@
+event_id,customer_id,event_type,event_ts,page
+30001,1,page_view,2024-05-08 10:00:00,/home
+30002,1,product_view,2024-05-08 10:05:00,/product/1001
+30003,2,add_to_cart,2024-05-10 11:00:00,/cart
+30004,3,page_view,2024-05-12 09:15:00,/home
+30005,4,product_view,2024-05-15 12:30:00,/product/1007
+30006,5,page_view,2024-05-16 09:45:00,/home
+30007,6,page_view,2024-05-17 13:00:00,/home
+30008,7,product_view,2024-05-18 14:20:00,/product/1009
+30009,8,add_to_cart,2024-05-19 15:00:00,/cart
+30010,9,checkout_start,2024-05-20 10:10:00,/checkout

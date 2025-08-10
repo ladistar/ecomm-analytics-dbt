@@ -1,0 +1,16 @@
+order_id,customer_id,order_date,status,promo_code
+5001,1,2024-05-10,completed,SPRING10
+5002,2,2024-05-11,completed,
+5003,1,2024-05-12,completed,
+5004,3,2024-05-13,cancelled,
+5005,4,2024-05-15,completed,MAY15
+5006,5,2024-05-16,completed,
+5007,6,2024-05-17,completed,
+5008,7,2024-05-18,completed,
+5009,8,2024-05-19,refunded,
+5010,9,2024-05-20,completed,
+5011,10,2024-05-21,completed,
+5012,2,2024-05-22,completed,
+5013,3,2024-05-23,completed,
+5014,4,2024-05-24,completed,
+5015,5,2024-05-25,completed,

@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: Order-level fact table with revenue and payment status
+    columns:
+      - name: order_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: revenue
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+  - name: dim_customers
+    description: Customer dimension with lifecycle metrics
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+
+  - name: dim_products
+    description: Product dimension with sales stats
+    columns:
+      - name: product_id
+        tests: [not_null, unique]
+
+  - name: daily_revenue
+    description: Daily revenue and orders
+    columns:
+      - name: order_date
+        tests: [not_null, unique]
+
+  - name: aov_by_day
+    description: Average order value by day
+    columns:
+      - name: order_date
+        tests: [not_null, unique]

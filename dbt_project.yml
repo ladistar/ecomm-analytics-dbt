@@ -1,0 +1,21 @@
+name: 'ecommerce_analytics'
+version: '1.0.0'
+config-version: 2
+profile: 'ecommerce_duckdb'
+require-dbt-version: ['>=1.7.0', '<2.0.0']
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+macro-paths: ["macros"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+
+models:
+  ecommerce_analytics:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table

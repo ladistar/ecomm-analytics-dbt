@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,email,signup_date,state
+1,Alice,Carson,alice@example.com,2024-01-05,FL
+2,Bob,Dillon,bob@example.com,2024-01-12,NY
+3,Carla,Essex,carla@example.com,2024-02-01,CA
+4,Dev,Faraday,dev@example.com,2024-02-19,TX
+5,Erin,Gill,erin@example.com,2024-03-03,WA
+6,Frank,Hooper,frank@example.com,2024-03-10,FL
+7,Gina,Iverson,gina@example.com,2024-03-22,IL
+8,Hank,Jeffers,hank@example.com,2024-04-01,MA
+9,Isla,King,isla@example.com,2024-04-18,AZ
+10,Jay,Lang,jay@example.com,2024-05-05,FL
