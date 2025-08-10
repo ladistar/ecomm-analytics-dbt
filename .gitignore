@@ -1,0 +1,30 @@
+# dbt
+target/
+dbt_packages/
+logs/
+.dbt/
+
+# DuckDB
+*.duckdb
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+dist/
+build/
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
