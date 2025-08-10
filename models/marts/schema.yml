@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: fct_orders
-    description: Order-level fact table with revenue and payment status
+    description: "{{ doc('fct_orders') }}"
     columns:
       - name: order_id
         tests: [not_null, unique]
@@ -17,25 +17,25 @@ models:
               min_value: 0
 
   - name: dim_customers
-    description: Customer dimension with lifecycle metrics
+    description: "{{ doc('dim_customers') }}"
     columns:
       - name: customer_id
         tests: [not_null, unique]
 
   - name: dim_products
-    description: Product dimension with sales stats
+    description: "{{ doc('dim_products') }}"
     columns:
       - name: product_id
         tests: [not_null, unique]
 
   - name: daily_revenue
-    description: Daily revenue and orders
+    description: "{{ doc('daily_revenue') }}"
     columns:
       - name: order_date
         tests: [not_null, unique]
 
   - name: aov_by_day
-    description: Average order value by day
+    description: "{{ doc('aov_by_day') }}"
     columns:
       - name: order_date
         tests: [not_null, unique]
