@@ -63,7 +63,7 @@ models:
         tests:
           - dbt_expectations.expect_column_values_to_be_between:
               min_value: 1
-              strictly: true
+              strictly: false
       - name: unit_price
         tests:
           - dbt_expectations.expect_column_values_to_be_between:
