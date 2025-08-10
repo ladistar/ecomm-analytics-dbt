@@ -1,5 +1,8 @@
 # Ecommerce Analytics — dbt + DuckDB (CI-ready)
+[![dbt (DuckDB)](https://github.com/ladistar/ecomm-analytics-dbt/actions/workflows/dbt_duckdb.yml/badge.svg)](https://github.com/ladistar/ecomm-analytics-dbt/actions/workflows/dbt_duckdb.yml)
+**▶ Live dbt docs:** https://ladistar.github.io/ecomm-analytics-dbt/
 
+---
 This is a **portfolio-ready dbt project** you can push straight to GitHub. It runs locally and in **GitHub Actions** using DuckDB (no external warehouse needed).
 
 ## What it builds
